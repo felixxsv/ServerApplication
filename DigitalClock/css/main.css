@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'DS-DIGITAL';
+    src: url('/font/ds_digital/DS-Digital.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DS-DIGITAL';
+    src: url('/font/ds_digital/DS-DigitalB.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DS-DIGITAL';
+    src: url('/font/ds_digital/DS-DigitalI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'DS-DIGITAL';
+    src: url('/font/ds_digital/DS-DigitalT.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'DS-DIGITAL', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 1920px;
+    height: 480px;
+    background-color: #000;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+
+.clock-section {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300px;
+}
+
+.info-section {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+}
+
+.settings-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.settings-menu {
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 20px;
+    display: none;
+}
+
+.settings-menu label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.settings-menu input[type="color"],
+.settings-menu input[type="file"] {
+    margin-left: 10px;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+
+#backgroundImagePicker {
+    display: none;
+}
+
+#backgroundImg {
+    display: flex;
+}
+
+#fileStatus {
+    width: 200px;            /* 幅を指定 */
+      white-space: nowrap;     /* テキストを改行しない */
+      overflow: hidden;        /* はみ出した部分を非表示 */
+      text-overflow: ellipsis;
+}
