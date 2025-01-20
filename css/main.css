@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'DigitalFont';
+    src: url('/font/ds_digital/DS-DIGI.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DigitalFont';
+    src: url('/font/ds_digital/DS-DIGIB.TTF') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DigitalFont';
+    src: url('/font/ds_digital/DS-DIGII.TTF') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DigitalFont';
+    src: url('/font/ds_digital/DS-DIGIT.TTF') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+    font-family: 'DigitalFont';
+    background-color: #1e1e1e;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 1920px;
+    height: 480px;
+    display: flex;
+}
+
+.clock-section {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 300px;
+    font-weight: bold;
+    background-color: #222;
+}
+
+.info-section {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-section > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    border: 1px solid #444;
+    background-color: #333;
+}
+
+.date {
+    border-bottom: none;
+    text-align: center;
+}
